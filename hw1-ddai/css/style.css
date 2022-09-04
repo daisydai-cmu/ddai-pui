@@ -153,7 +153,9 @@ select {
 /* Hover states */
 .item:hover, .nav:hover {
     background-color: yellow;
+    font-weight: bold;
   }
+    
 
 a.current {
     background:yellow;
