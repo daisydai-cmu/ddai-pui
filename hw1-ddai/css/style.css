@@ -36,8 +36,6 @@ label {
 header {
     margin: auto;
     text-align: center;
-    border-bottom: 2px;
-    border-color: black;
 }
 
 #logo {
@@ -131,7 +129,13 @@ select {
 .cart-item-img {
     width: 100px;
     border:3px solid black;
-    margin-bottom: 10px;
+}
+
+.tiny-font {
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
 .cart-price {
@@ -140,7 +144,7 @@ select {
 
 .cart-item {
     line-height: 50%;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 #total-checkout {

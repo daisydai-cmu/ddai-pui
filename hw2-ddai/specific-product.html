@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Specific Product Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"> <img src="images/logo-01.svg" alt="Bun bun bake shop logo" width="400px"</a>
+        </div>
+        <div id="header-right">
+            <nav>
+                <a class="nav-item current" href="index.html">PRODUCTS</a>
+                <a class="nav-item" href="cart.html">CART</a>
+            </nav>
+            <div id="divider">
+            </div>
+            <div id="page-name">
+                <h1>Original cinnamon roll</h1>
+            </div>
+        </div>
+    </header>
+    <!-- Main content --> 
+    <section id="specific-product-div">
+        <img src="images/original-cinnamon-roll.jpg" alt="image of original cinnamon roll" id="specific-product-img" width="640px">
+        <div class="specific-item">
+            <p id="dropdown-description"> Customize our delicious, hand-made cinnamon roll to your liking! </p>
+             <!--Used form for best practice--> 
+            <form>
+            <div class="dropdown">
+                <label for="glazing">Glazing:</label>
+                <select name="glazing" id="glazing">
+                    <option value="keep-original">Keep original</option>
+                    <option value="sugar-milk">Sugar Milk</option>
+                    <option value="vanilla-milk">Vanilla Milk</option>
+                    <option value="double-chocolate">Double Chocolate</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="pack-size">Pack size:</label>
+                <select name="pack-size" id="pack-size">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <!-- Submit button --> 
+            <div id="add-to-cart">
+                <p id="specific-item-price">$2.49</p>
+                <input type="submit" value="Add to Cart" id="button">
+            </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

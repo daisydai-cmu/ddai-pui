@@ -1,0 +1,255 @@
+body {
+    display: block;
+    font-family: sans-serif;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+/* Font styling */
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 32px;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 28px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+#specific-item-price{
+    font-weight: bold;
+}
+
+.tiny-font {
+    font-size: 14px;
+    font-weight:500;
+    text-decoration: underline;
+    text-align: left;
+
+}
+
+
+.item-name {
+    text-decoration: underline;
+    margin-bottom: -15px;
+    font-weight: 200;
+}
+
+label {
+    font-size: 20px;
+}
+
+/* top nav */
+header {
+    width: 1200px;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+#logo {
+    padding: 24px 0px 24px 0px;
+    text-align: left;
+    margin: 0px 40px 20px 40px;
+    
+}
+
+#header-right {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#divider {
+    border-bottom: 5px solid black;
+}
+
+
+nav {
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 60px;
+    margin-bottom: -20px;
+}
+
+.nav-item {
+    margin-left: 80px;
+}
+
+#page-name {
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+/* Home page */
+section {
+    margin: auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    max-width: 1060px;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+.item {
+    width:max-content;
+    text-align: left;
+    padding: 10px 10px 0px 10px;
+}
+
+.item-img {
+    width: 300px;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+/* Specific product page */
+#specific-product-div {
+    display: flex;
+    width: 1060px;
+}
+#specific-product-img {
+    border: 3px solid black;
+}
+
+#dropdown-description {
+    margin-bottom: 60px;
+}
+
+.specific-item {
+    padding: 0px 40px;
+    text-align: left;
+    margin: auto;
+}
+
+/* Dropdown menu styling (Didn't see that we are not required to do this) */
+select {
+    background-color: #ffffff;
+    padding: 4px 8px;
+    border: 2px solid black;
+    border-radius: 1px;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.dropdown {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#add-to-cart {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-top: 80px;
+}
+
+#button {
+    background-color: yellow;
+    margin-left: 40px;
+    padding: 8px 32px;
+    height: max-content;
+    border: 3px solid black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* Cart page */
+
+#cart-content {
+    width: 720px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.cart-item-left {
+    display: flex;
+
+}
+
+.cart-item-details {
+    margin-left: 30px;
+    text-align: left;
+    
+}
+
+.cart-item-img {
+    width: 120px;
+    border:3px solid black;
+}
+
+.cart-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    line-height: 50%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.cart-price {
+    margin: 0 60px 30px 0px;
+}
+
+#total-checkout {
+    border-top: 3px solid black;
+    padding-top: 20px;
+}
+
+#total-text {
+    margin-left: 155px;
+}
+
+.total-price {
+    margin-bottom: 0;
+
+}
+
+#button-div{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+    margin-top: 40px;
+
+}
+
+
+/* Hover states */
+.item:hover, .nav:hover {
+    background-color: yellow;
+    font-weight: bold;
+  }
+    
+
+a.current {
+    background:yellow;
+    font-weight: bold;
+}
+
