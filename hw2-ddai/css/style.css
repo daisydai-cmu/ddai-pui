@@ -43,7 +43,6 @@ p {
 
 
 .item-name {
-    text-decoration: underline;
     margin-bottom: -15px;
     font-weight: 200;
 }
@@ -247,7 +246,6 @@ select {
     font-weight: bold;
   }
     
-
 a.current {
     background:yellow;
     font-weight: bold;

@@ -1,0 +1,66 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>Specific Product Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <img src="images/logo-01.svg" alt="Bun bun bake shop logo"
+          width="400px"</a
+        >
+      </div>
+      <div id="header-right">
+        <nav>
+          <a class="nav-item current" href="index.html">PRODUCTS</a>
+          <a class="nav-item" href="cart.html">CART</a>
+        </nav>
+        <div id="divider"></div>
+        <div id="page-name">
+          <h1>Original cinnamon roll</h1>
+        </div>
+      </div>
+    </header>
+    <!-- Main content -->
+    <section id="specific-product-div">
+      <img
+        src="images/original-cinnamon-roll.jpg"
+        alt="image of original cinnamon roll"
+        id="specific-product-img"
+        width="640px"
+      />
+      <div class="specific-item">
+        <p id="dropdown-description">
+          Customize our delicious, hand-made cinnamon roll to your liking!
+        </p>
+        <!--Used form for best practice-->
+        <form>
+          <div class="dropdown">
+            <label for="glazing">Glazing:</label>
+            <select
+              name="glazing"
+              id="glazingOptions"
+              onchange="glazingChange(this)"
+            ></select>
+          </div>
+          <div class="dropdown">
+            <label for="pack-size">Pack size:</label>
+            <select
+              name="pack-size"
+              id="pack-size"
+              onchange="packSizeChange(this)"
+            ></select>
+          </div>
+          <!-- Submit button -->
+          <div id="add-to-cart">
+            <p id="specific-item-price"></p>
+            <input type="submit" value="Add to Cart" id="button" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="price.js"></script>
+  </body>
+</html>
