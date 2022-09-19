@@ -1,20 +1,20 @@
 const glazing = {
     options: ["Keep original", "Sugar milk", "Vanilla milk", "Double chocolate"],
-    price_adaptation: [0, 0, 0.5, 1.5],
+    priceAdaptation: [0, 0, 0.5, 1.5],
   };
   
-  const pack_size = {
+  const packSize = {
     options: ["1", "3", "6", "12"],
-    price_adaptation: [1, 3, 5, 10],
+    priceAdaptation: [1, 3, 5, 10],
   };
   
   const base_price = 2.49;
   
-  var glazing_dropdown = document.getElementById("glazingOptions");
-  var pack_size_dropdown = document.getElementById("pack-size");
-  var bun_price = document.getElementById("specific-item-price");
+  var glazingDropdown = document.getElementById("glazingOptions");
+  var packSizeDropdown = document.getElementById("pack-size");
+  var bunPrice = document.getElementById("specific-item-price");
   
-  var glazing_price = 0;
+  var glazingPrice = 0;
   var pack_price = 1;
   
   for (var i = 0; i < glazing.options.length; i++) {
@@ -22,38 +22,38 @@ const glazing = {
     var ele = document.createElement("option");
     ele.textContent = opt;
     ele.value = opt;
-    glazing_dropdown.appendChild(ele);
+    glazingDropdown.appendChild(ele);
   }
   
-  for (var i = 0; i < pack_size.options.length; i++) {
-    var opt = pack_size.options[i];
+  for (var i = 0; i < packSize.options.length; i++) {
+    var opt = packSize.options[i];
     var ele = document.createElement("option");
     ele.textContent = opt;
     ele.value = opt;
-    pack_size_dropdown.appendChild(ele);
+    packSizeDropdown.appendChild(ele);
   }
   
   function updateBunPrice() {
-    let new_price = parseFloat((base_price + glazing_price) * pack_price).toFixed(
+    let new_price = parseFloat((base_price + glazingPrice) * pack_price).toFixed(
       2
     );
-    bun_price.textContent = new_price;
+    bunPrice.textContent = new_price;
   }
   
   updateBunPrice();
   
   function glazingChange(element) {
-    var now_price = element.value;
+    var updatedPrice = element.value;
     var newGlazingPrice =
-      glazing.price_adaptation[glazing.options.indexOf(now_price)];
-    glazing_price = newGlazingPrice;
+      glazing.priceAdaptation[glazing.options.indexOf(updatedPrice)];
+    glazingPrice = newGlazingPrice;
     updateBunPrice();
   }
   
   function packSizeChange(element) {
-    var now_pack_price = element.value;
+    var nowPackPrice = element.value;
     var newPackPrice =
-      pack_size.price_adaptation[pack_size.options.indexOf(now_pack_price)];
+      packSize.priceAdaptation[packSize.options.indexOf(nowPackPrice)];
     pack_price = newPackPrice;
     updateBunPrice();
   }
