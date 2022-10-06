@@ -74,3 +74,4 @@ function onSelectValueChange() {
 onSelectValueChange();
 glazingDropdown.addEventListener("change", onSelectValueChange);
 packSizeDropdown.addEventListener("change", onSelectValueChange);
+
