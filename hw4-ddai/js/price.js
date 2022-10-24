@@ -62,7 +62,7 @@ for (let i = 0; i < packSize.length; i++) {
 function displayPrice(glazing, packSize) {
   newPrice =
     (rollBasePrice + glazing.priceAdaptation) * packSize.priceAdaptation;
-  priceElement.innerText = parseFloat(newPrice.toFixed(2)); //js adds trailing zeros in decimal multiplication...
+  priceElement.innerText = parseFloat(newPrice.toFixed(2)); // very annoying, js adds trailing zeros in decimal multiplication
 }
 
 function onSelectValueChange() {
@@ -74,4 +74,3 @@ function onSelectValueChange() {
 onSelectValueChange();
 glazingDropdown.addEventListener("change", onSelectValueChange);
 packSizeDropdown.addEventListener("change", onSelectValueChange);
-
