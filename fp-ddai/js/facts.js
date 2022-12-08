@@ -1,0 +1,41 @@
+function get_fact() {
+    var facts = [
+      'The scientific name for banana is musa sapientum, which means "fruit of the wise men."',
+      "You'd have to eat 10 million bananas at once to die of radioactive poisoning.",
+      "Rubbing the inside of a banana peel on a mosquito bite will help keep it from itching.",
+      "The fastest marathon ever run by someone dressed as a banana was 2 hours, 58 minutes.",
+      "Bananas can probably be used as floatation devices since they float in water.",
+      "The fiber in the banana plant can be used to make fabric and paper.",
+      "More than 100 billion bananas are eaten every year in the world.",
+      "Americans eat an average of 27 pounds of bananas per person every year.",
+      "The most bananas peeled and eaten in 1 minute is 8 (seems low).",
+      "Bananas can be used instead of tomatoes to make ketchup",
+      "51 percent of bananas are eaten for breakfast at home.",
+      "You can't actually slip on banana peels, just try it.",
+      "Banana peels can be dried and ground up to be water filters",
+      "In China, eating bananas seductively during livestreams is illegal.",
+      "Bananas weren't always yellow.",
+      "A man in India once ate 81 bananas in a half hour.",
+      "More songs have been written about bananas than about any other fruit.",
+      "Bananas don't actually grow on trees. their plants are classified as an herb.",
+      "Banana plants are the world's largest herb.",
+      "The original wild banana contained many large, hard seeds.",
+      "Bananas are technically berries.",
+      "A cluster of bananas is called a hand",
+      "Bananas are made of 75% water.",
+      "A single banana is called a finger.",
+      "Banana plants grow not from seeds but from bulbs.",
+      "Bananas have been depicted in ancient Egyptian hieroglyphs. It may be the world's first fruit.",
+      "Bananas have no fat, no sodium, and no cholesterol.",
+      "Don't want heart attacks and strokes? Eat a banana.",
+      "Banana is the only fruit that helps your body produce serotonin, which alleviates depression.",
+      "About half of all people who are allergic to latex are often also allergic to bananas.",
+      "Yes, bananas are naturally radioactive.",
+      "Try cooking your banana peels, they become are edible!",
+      "Peeling bananas from bottom up (holding on to the stem like a handle) is the superior method since you'd avoid the stringy bits that cling to them.",
+      "Putting bananas in the fridge turns the peel black... It won't affect the inside but they'll be ugly.",
+    ];
+    var rng = Math.floor(Math.random() * facts.length);
+    return facts[rng];
+  }
+  

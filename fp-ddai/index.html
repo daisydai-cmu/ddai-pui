@@ -1,0 +1,55 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peel the Banana</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <div id="left">
+        <img
+          id="title"
+          src="images/overlay.png"
+          alt="Page title that reads Peel the Banana"
+        />
+        <img
+        id="banana"
+        src="images/b1.png"
+        alt="A single large banana being peeled as it gets clicked." 
+        />
+
+        <div id="left-lower-half">
+          <div id="circle"></div>
+          <div id="banana-counter">
+            <div id="banana-counter-text">
+              <h1 id="counter-text">bananas peeled:</h1>
+            </div>
+            <div id="banana-counter-number">
+              <h1 id="counter-number">0</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <h1>Did you know?</h1>
+        <p>(Untrustworthy banana facts)</p>
+        <div id="fact-list">
+          <div class="fact-card new-card">
+            <img
+              id="sticker"
+              src="images/sticker.svg"
+              alt="Label sticker found on fruits"
+            />
+            <p>
+              You are 50% identical to bananas as you share about half of the same DNA
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/script.js"></script>
+  <script src="js/facts.js"></script>
+</html>
