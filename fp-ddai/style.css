@@ -47,6 +47,7 @@
   #banana {
     position: absolute;
     width: 30vw;
+    margin-top: 1%;
     /* user-drag: none; */
     -webkit-user-drag: none;
     user-select: none;
@@ -76,6 +77,7 @@
     display: inline-flex;
     align-items: center;
     color: 00A894;
+    margin-top: 8%;
   }
   
   #banana-counter-number {
@@ -189,7 +191,7 @@
   
     #banana {
       width: 40vw;
-      padding-top: 2%;
+      margin-top: 3%;
     }
   
     /* Right side of page */

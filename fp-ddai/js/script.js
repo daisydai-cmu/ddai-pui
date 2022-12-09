@@ -45,11 +45,17 @@ function on_click() {
   } else if (banana_stage == 3) {
     new_fact(get_fact());
     banana_stage += 1;
-    $("#title").attr("src", "images/overlay2.png");
+    $("#title").prop({
+        src: "images/overlay2.png",
+        alt: "Page title that reads 'Peel the banana' with the hint 'click on the banana to peel again'"
+      });
     required_action = 1;
   } else {
     banana_stage = 1;
-    $("#title").attr("src", "images/overlay.png");
+    $("#title").prop({
+        src: "images/overlay.png",
+        alt: "Page title that reads 'Peel the banana'"
+      });
   }
   $("#banana").attr("src", "images/b" + banana_stage.toString() + ".png");
   console.log(required_action, banana_stage);
