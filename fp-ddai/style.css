@@ -16,8 +16,7 @@
   }
   
   h1 {
-    font-size: 30px;
-    margin-bottom: 0px;
+    font-size: 2rem;
   }
   
   p {
@@ -95,6 +94,7 @@
   counter-text {
     font-size: 3rem;
   }
+
   
   /* Right side of page */
   #right {
@@ -118,7 +118,7 @@
     width: 80%;
     border-radius: 24px;
     padding: 0 16 0 16;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     background: #ffffff;
     -webkit-user-drag: none;
     user-select: none;

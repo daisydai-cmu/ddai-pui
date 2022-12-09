@@ -2,6 +2,14 @@ var counter = $("#counter-number");
 var facts_learned = 0;
 var banana_stage = 1;
 
+const delta = 8;
+let startX;
+let startY;
+let diffX;
+let diffY;
+
+var required_action = 0;
+
 function new_fact(fact) {
   const fact_list = $("#fact-list");
   var new_card = $("<div></div>", {
@@ -38,13 +46,33 @@ function on_click() {
     new_fact(get_fact());
     banana_stage += 1;
     $("#title").attr("src", "images/overlay2.png");
+    required_action = 1;
   } else {
     banana_stage = 1;
     $("#title").attr("src", "images/overlay.png");
   }
   $("#banana").attr("src", "images/b" + banana_stage.toString() + ".png");
+  console.log(required_action, banana_stage);
 }
 
 $("#banana").on("click", function () {
-  on_click();
+  if (required_action && diffX < delta && diffY < delta) {
+    on_click();
+    required_action = 0;
+  }
+});
+
+$("#banana").on("mousedown", function (event) {
+  startX = event.pageX;
+  startY = event.pageY;
+});
+
+$("#banana").on("mouseup", function (event) {
+  diffX = Math.abs(event.pageX - startX);
+  diffY = Math.abs(event.pageY - startY);
+  if (!required_action) {
+    if (diffX > delta && diffY > delta) {
+      on_click();
+    }
+  }
 });
